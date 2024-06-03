@@ -1,0 +1,34 @@
+POST  http://127.0.0.1:8000/api/chat/ HTTP/1.1
+content-type: application/json
+
+{
+    "email": "johndoe@st.knust.edu.gh",
+    "message": "i am having a  bad day"
+}
+
+###
+POST  http://127.0.0.1:8000/api/chat/ HTTP/1.1
+content-type: application/json
+
+{
+    "email": "johndoe@st.knust.edu.gh",
+    "message": "i need motivation to keep going"
+}
+
+###
+POST  http://127.0.0.1:8000/api/chat/ HTTP/1.1
+content-type: application/json
+
+{
+    "email": "johndoe@st.knust.edu.gh",
+    "message": "what do i do if i am stressed out?"
+}
+
+###
+POST  http://127.0.0.1:8000/api/chat/ HTTP/1.1
+content-type: application/json
+
+{
+    "email": "rubenvordzorgbe@gmail.com",
+    "message":"It's a week to midsem and I am feeling anxious" 
+}

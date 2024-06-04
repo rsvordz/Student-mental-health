@@ -12,7 +12,7 @@ content-type: application/json
 
 {
     "email": "johndoe@st.knust.edu.gh",
-    "message": "i need motivation to keep going"
+    "message": "i was frustrated today"
 }
 
 ###
@@ -30,5 +30,5 @@ content-type: application/json
 
 {
     "email": "rubenvordzorgbe@gmail.com",
-    "message":"It's a week to midsem and I am feeling anxious" 
+    "message":"i want to become a thief in future?" 
 }

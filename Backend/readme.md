@@ -1,6 +1,6 @@
 # Student Mental Health
 
-This is a councelling web application built with Django and PostgreSQL. It allows users to create an account, chat with a chatbot, and retrieve their previously saved conversations.
+This is a councelling web application built with Django and PostgreSQL. It allows users to book sessions, chat with a chatbot, and retrieve their previously saved conversations.
 
 ## Getting Started
 

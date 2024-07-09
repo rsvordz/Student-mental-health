@@ -82,12 +82,16 @@ const ChatBot = () => {
                                 <div key={index} className=" mb-4">
                                     <div className='flex justify-end'>
                                         <div className="p-2 w-2/3 mb-4 rounded-lg bg-gray-300 text-black">
-                                            {msg.user_message}
+                                            <p className='text-sm md:text-base'>
+                                                {msg.user_message}
+                                            </p>
                                         </div>
                                     </div>
                                     <div className='flex justify-start'>
                                         <div className="p-2 w-2/3  rounded-lg bg-blue-500 text-white">
-                                            {msg.bot_response}
+                                            <p className='text-sm md:text-base'>
+                                                {msg.bot_response}
+                                            </p>
                                         </div>
                                     </div>
 

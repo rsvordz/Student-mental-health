@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 function SelfHelp({ children }) {
   const location = useLocation();
 
@@ -20,12 +21,11 @@ function SelfHelp({ children }) {
             <li className="text-xs cursor-pointer  ">
               <a href="/" className="hover:underline ">
                 Home
-              </a>{" "}
+              </a>
               &gt;
             </li>
             {location.pathname === "/self-help/resources" && (
               <span
-                onClick={() => setHelp("self")}
                 className="text-xs hover:underline  cursor-pointer">
                 self-help
               </span>

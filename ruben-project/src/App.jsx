@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import ChatBot from "./pages/Chat";
 import SelfHelp from "./pages/SelfHelp";
 import Layout from "./components/Layouts";
 import About from "./pages/About";
@@ -27,6 +28,7 @@ function App() {
               </SelfHelp>
             }
           />
+
           <Route
             path="self-help/resources"
             element={
@@ -66,6 +68,12 @@ function App() {
               <About>
                 <Mos />
               </About>
+            }
+          />
+          <Route
+            path="/chat"
+            element={
+              <ChatBot />
             }
           />
         </Routes>

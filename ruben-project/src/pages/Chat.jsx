@@ -20,7 +20,7 @@ const ChatBot = () => {
 
     const fetchConversationHistory = async (email) => {
         try {
-            const res = await axios.get(`${import.meta.env.VITE_BASE_URL}/conversation-history/${email}`);
+            const res = await axios.get(`${import.meta.env.VITE_BASE_URL}/self_help/conversation-history/${email}`);
             setMessages(res.data);
         } catch (error) {
             console.error("Error fetching conversation history", error);

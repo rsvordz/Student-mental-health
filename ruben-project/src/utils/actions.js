@@ -18,7 +18,7 @@ export const chatWithBot = async (data) => {
   console.log("sending");
   try {
     const res = await axios.post(
-      `${import.meta.env.VITE_BASE_URL}/chat/`,
+      `${import.meta.env.VITE_BASE_URL}/self_help/chat/`,
       data
     );
     console.log("response data : ", res);

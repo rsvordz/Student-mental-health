@@ -7,7 +7,7 @@ export const Links = [
   {
     id: 1,
     src: "/contact",
-    name: "Book a Session",
+    name: "Book an Appointment",
   },
   {
     id: 2,

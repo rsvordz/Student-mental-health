@@ -12,7 +12,7 @@ const BookingForm = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    // bookAnAppointMent(data);
+    bookAnAppointMent(data);
     console.log("sent data ", data);
     reset()
     toast.success("Appointment booked successfully!");

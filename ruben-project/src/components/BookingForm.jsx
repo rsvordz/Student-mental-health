@@ -1,19 +1,21 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { bookAnAppointMent } from "../utils/actions";
-import toast from 'react-hot-toast';
+import toast from "react-hot-toast";
 
 const BookingForm = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
 
   const onSubmit = (data) => {
     // bookAnAppointMent(data);
-    console.log('sent data ', data);
-    toast.success('Appointment booked successfully!');
+    console.log("sent data ", data);
+    reset()
+    toast.success("Appointment booked successfully!");
   };
 
   const [name, setName] = useState("");
@@ -37,6 +39,9 @@ const BookingForm = () => {
             {...register("full_name", { required: true, maxLength: 20 })}
             placeholder="Your Name"
           />
+          {errors.full_name?.type === "required" && (
+            <p role="alert">Full name is required</p>
+          )}
         </div>
 
         <div className="mb-4">
@@ -52,6 +57,9 @@ const BookingForm = () => {
             required
             {...register("email")}
           />
+          {errors.email?.type === "required" && (
+            <p role="alert">email is required</p>
+          )}
         </div>
 
         <div className="mb-4">
@@ -67,6 +75,9 @@ const BookingForm = () => {
             required
             {...register("phone_number")}
           />
+          {errors.phone_number?.type === "required" && (
+            <p role="alert">Phone number is required</p>
+          )}
         </div>
 
         <div className="mb-4">
@@ -81,6 +92,9 @@ const BookingForm = () => {
             required
             {...register("booking_date")}
           />
+          {errors.booking_date?.type === "required" && (
+            <p role="alert">Booking date is required</p>
+          )}
         </div>
 
         <div className="mb-4">
@@ -108,9 +122,13 @@ const BookingForm = () => {
             <option value="Abuse">Abuse</option>
             <option value="Stress Management">Stress Management</option>
             <option value="Intrapersonal Issues">Intrapersonal Issues</option>
-            <option value="Relationship Counselling">Relationship Counselling</option>
+            <option value="Relationship Counselling">
+              Relationship Counselling
+            </option>
           </select>
-          {errors.issue && <p className="text-red-500 text-xs mt-1">Issue is required</p>}
+          {errors.issue && (
+            <p className="text-red-500 text-xs mt-1">Issue is required</p>
+          )}
         </div>
 
         <div className="mb-6">
@@ -126,6 +144,9 @@ const BookingForm = () => {
             required
             {...register("message")}
           />
+          {errors.message?.type === "required" && (
+            <p role="alert">Message is required</p>
+          )}
         </div>
 
         <div className="flex justify-center">

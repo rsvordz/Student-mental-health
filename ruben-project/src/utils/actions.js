@@ -4,7 +4,7 @@ export const bookAnAppointMent = async (data) => {
   console.log("sending");
   try {
     const res = await axios.post(
-      `${import.meta.env.VITE_BASE_URL}/booking/`,
+      `${import.meta.env.VITE_BASE_URL}/home/booking/`,
       data
     );
     console.log("response data : ", res);
